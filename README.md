@@ -1,5 +1,6 @@
+**<div align="center" style="font-size:50px">Subtitle Generation using Whisper ASR</div>**
 
-Tap into the power of OpenAI's Whisper ASR model to effortlessly turn your videos into accurate subtitles with precise timestamps! Elevate video accessibility with ease using SubRip (.srt) formatted subtitles.
+Leveraging the OpenAI Whisper ASR model, this tool converts videos into accurate subtitles with timestamps, simplifying the process of enhancing video accessibility through SubRip (.srt) formatted subtitles.
 
 **Quick Start in 3 Simple Steps:**
 
