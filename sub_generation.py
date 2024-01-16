@@ -2,6 +2,8 @@ import os
 import ffmpeg
 import whisper
 import argparse
+
+
 def convert_time(time):
     hours, remainder = divmod(time, 3600)
     minutes, seconds = divmod(remainder, 60)
