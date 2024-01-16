@@ -1,7 +1,7 @@
 import os
 import ffmpeg
 import whisper
-
+import argparse
 def convert_time(time):
     hours, remainder = divmod(time, 3600)
     minutes, seconds = divmod(remainder, 60)
@@ -39,5 +39,13 @@ def get_subtitle(video_path):
     os.remove(audio_path)
     print("Subtitle saved as", subtitle_path)
 
-video_path = "test.mp4"  # Replace with the path to your video file
-get_subtitle(video_path)
+def main():
+    parser = argparse.ArgumentParser(description="Generate subtitles for your video")
+    parser.add_argument("--input", help="Path to the input video file", required=True)
+    args = parser.parse_args()
+
+    video_path = args.input
+    get_subtitle(video_path)
+
+if __name__ == '__main__':
+    main()
